@@ -17,4 +17,9 @@ General Flow:
 #Packages   
 pip install Pillow  
 pip install pytesseract  
-python3 -m pip install -U discord.py  
+python3 -m pip install -U discord.py    
+
+#Resources
+https://discordpy.readthedocs.io/en/stable/
+
+ 
