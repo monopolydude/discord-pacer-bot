@@ -1,1 +1,1 @@
-print("wat up niggsss")
+print("just syaing, ryan you are not  a real coder boy")
