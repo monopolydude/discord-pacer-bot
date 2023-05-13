@@ -11,7 +11,7 @@ General Flow:
 1. Input data (manually or screenshot)  
 2. Run image through tesseract ocr
 3. Extract text (needs work)
-4. Store in data base
+4. Store in database
 5. Respond to users  
   
 #Packages   
