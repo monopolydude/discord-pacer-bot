@@ -52,4 +52,4 @@ intents.message_content = True
 intents.guilds = True
 
 client = MyClient(intents=intents)
-client.run("MTEwNTY3ODU3MDY0MDExMzc4NA.GcbrTc.doSG0BEZQtNUBZe9fw2CF8lFyGotVufPejy58U")
+client.run("TOKEN HERE")
