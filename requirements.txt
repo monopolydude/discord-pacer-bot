@@ -1,0 +1,5 @@
+pytesseract
+pillow
+discord.py
+requests
+mysql-connector

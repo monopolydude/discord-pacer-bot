@@ -14,10 +14,8 @@ General Flow:
 4. Store in database
 5. Respond to users  
   
-#Packages   
-pip install Pillow  
-pip install pytesseract  
-python3 -m pip install -U discord.py    
+#Requirements
+pip install -r requirements.txt 
 
 #Resources
 https://discordpy.readthedocs.io/en/stable/
