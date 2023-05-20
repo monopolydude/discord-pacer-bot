@@ -37,10 +37,9 @@ def tableExists(tableName):
     tableName = "DB_" + str(tableName)
     connection = createConnection('tableName')
     cursor = connection.cursor()
-    cursor.execute("""
-           SELECT COUNT(*)
-           FROM information_schema.tables
-           WHERE table_name = """ + str(tableName))
+    select_stmt = "SELECT COUNT(*) FROM information_schema.tables WHERE table_name = %(tableName)s"
+    cursor.execute(select_stmt, {'tableName' : tableName})
+    print("yuh")
     if cursor.fetchone()[0] == 1:
         cursor.close()
         connection.close()

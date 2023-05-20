@@ -21,9 +21,12 @@ class MyClient(discord.Client):
                 url = message.attachments[0].url
                 response = requests.get(url)
                 text = pytesseract.image_to_string(PIL.Image.open(BytesIO(response.content))).lower()
+                #remove empty from list
                 text = text.split('\n')
+                text = list(filter(None, text))
                 indices = [i for i, s in enumerate(text) if 'distance' in s]
                 if (len(indices) != 0):
+                    print(text)
                     print(text[indices[0]])
                     print(text[indices[0] + 1])
                 guild = message.guild.id
@@ -41,5 +44,5 @@ intents.message_content = True
 intents.guilds = True
 
 client = MyClient(intents=intents)
-client.run("TOKEN HERE")
+client.run("MTEwNTY3ODU3MDY0MDExMzc4NA.GDL52w.TxV6WP8N6MiipCquMIofyNgynDXbEW2EIq7GKQ")
 #test
