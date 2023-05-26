@@ -44,5 +44,5 @@ intents.message_content = True
 intents.guilds = True
 
 client = MyClient(intents=intents)
-client.run("MTEwNTY3ODU3MDY0MDExMzc4NA.GDL52w.TxV6WP8N6MiipCquMIofyNgynDXbEW2EIq7GKQ")
+client.run("MTEwNTY3ODU3MDY0MDExMzc4NA.Gic_mB.ITQk5aDQHDjQtsYl1dfmGSC1eR1bw7FMQ9X09Q")
 #test
